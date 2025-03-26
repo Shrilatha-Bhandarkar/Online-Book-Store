@@ -1,4 +1,5 @@
 Online Book Store 📚
+
 A Spring Boot application for managing books in an online bookstore. This project provides a RESTful API to add, update, retrieve, and delete books while integrating logging and monitoring features.
 
 **Features** 🚀
