@@ -40,15 +40,6 @@ public class BookController {
 		return bookService.getAllBooks();
 	}
 
-	// Retrieves a book by ID
-	@GetMapping("/{id}") // Handles HTTP GET requests to retrieve a book by its ID
-	public Book getBookById(@PathVariable Long id) {
-		// Logs the request to fetch a specific book by ID
-		logger.info("Request to retrieve book with ID: {}", id);
-		return bookService.getBookById(id)
-				.orElseThrow(() -> new BookNotFoundException("Book not found with id: " + id));
-	}
-
 	// Updates an existing book
 	@PutMapping("/{id}") // Handles HTTP PUT requests to update an existing book
 	public Book updateBook(@PathVariable Long id, @RequestBody Book updatedBook) {
@@ -64,5 +55,14 @@ public class BookController {
 		logger.info("Request to delete book with ID: {}", id);
 		bookService.deleteBook(id);
 		return "Book deleted successfully";
+	}
+	
+	// Retrieves a book by ID
+	@GetMapping("/{id}") // Handles HTTP GET requests to retrieve a book by its ID
+	public Book getBookById(@PathVariable Long id) {
+		// Logs the request to fetch a specific book by ID
+		logger.info("Request to retrieve book with ID: {}", id);
+		return bookService.getBookById(id)
+				.orElseThrow(() -> new BookNotFoundException("Book not found with id: " + id));
 	}
 }
