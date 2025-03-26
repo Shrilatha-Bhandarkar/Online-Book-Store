@@ -1,0 +1,33 @@
+2025-03-21T22:08:22.010+05:30  INFO 29428 --- [OnlineBookStore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-21T22:08:22.084+05:30  INFO 29428 --- [OnlineBookStore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-21T22:08:22.437+05:30  WARN 29428 --- [OnlineBookStore] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-21T22:08:22.892+05:30  INFO 29428 --- [OnlineBookStore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-03-21T22:08:22.906+05:30  INFO 29428 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Started OnlineBookStoreApplication in 6.02 seconds (process running for 6.64)
+2025-03-21T22:08:38.006+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21T22:08:38.007+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-21T22:08:38.010+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-21T22:08:38.107+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.controller.BookController      : Request to retrieve book with ID: 10
+2025-03-21T22:08:38.109+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Starting operation: getBookById
+2025-03-21T22:08:38.110+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.service.BookService            : Looking for book with ID: 10
+2025-03-21T22:08:38.237+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Operation 'getBookById' completed in 128 ms
+2025-03-21T22:08:38.238+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:08:38.243+05:30 ERROR 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.b.exception.GlobalExceptionHandler   : BookNotFoundException occurred: Book not found with id: 10
+2025-03-21T22:13:40.039+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.controller.BookController      : Request to add a new book: Jane Eyre
+2025-03-21T22:13:40.040+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : Starting operation: addBook
+2025-03-21T22:13:40.040+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.service.BookService            : Saving book: Jane Eyre
+2025-03-21T22:13:40.192+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : Operation 'addBook' completed in 152 ms
+2025-03-21T22:13:40.193+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:14:58.405+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-8] c.o.books.controller.BookController      : Request to delete book with ID: 10
+2025-03-21T22:14:58.406+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-8] c.o.books.util.MetricsConfig             : Starting operation: deleteBook
+2025-03-21T22:14:58.406+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-8] c.o.books.service.BookService            : Deleting book with ID: 10
+2025-03-21T22:14:59.205+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-8] c.o.books.util.MetricsConfig             : Operation 'deleteBook' completed in 799 ms
+2025-03-21T22:14:59.206+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-8] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:15:08.101+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-9] c.o.books.controller.BookController      : Request to delete book with ID: 20
+2025-03-21T22:15:08.104+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-9] c.o.books.util.MetricsConfig             : Starting operation: deleteBook
+2025-03-21T22:15:08.105+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-9] c.o.books.service.BookService            : Deleting book with ID: 20
+2025-03-21T22:15:08.117+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-9] c.o.books.util.MetricsConfig             : Operation 'deleteBook' completed in 13 ms
+2025-03-21T22:15:08.118+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-9] c.o.books.util.MetricsConfig             : ***********************************************************
+

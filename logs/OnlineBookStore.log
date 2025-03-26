@@ -1,0 +1,5 @@
+2025-03-21T22:18:30.750+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-7] c.o.books.util.MetricsConfig             : Starting operation: updateBook
+2025-03-21T22:18:30.757+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-7] c.o.books.service.BookService            : Updating book with ID: 11
+2025-03-21T22:18:30.797+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-7] c.o.books.util.MetricsConfig             : Operation 'updateBook' completed in 47 ms
+2025-03-21T22:18:30.798+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-7] c.o.books.util.MetricsConfig             : ***********************************************************
+

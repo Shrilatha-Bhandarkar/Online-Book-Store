@@ -1,0 +1,80 @@
+2025-03-21T22:00:17.462+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Starting operation: getBookById
+2025-03-21T22:00:17.466+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.service.BookService            : Looking for book with ID: 5
+2025-03-21T22:00:17.581+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Operation 'getBookById' completed in 119 ms
+2025-03-21T22:00:17.582+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:00:30.288+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-3] c.o.books.controller.BookController      : Request to retrieve all books
+2025-03-21T22:00:30.289+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-3] c.o.books.util.MetricsConfig             : Starting operation: getAllBooks
+2025-03-21T22:00:30.289+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-3] c.o.books.service.BookService            : Retrieving all books
+2025-03-21T22:00:30.468+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-3] c.o.books.service.BookService            : Fetched 8 books
+2025-03-21T22:00:30.469+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-3] c.o.books.util.MetricsConfig             : Operation 'getAllBooks' completed in 180 ms
+2025-03-21T22:00:30.469+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-3] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:00:34.955+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-4] c.o.books.controller.BookController      : Request to retrieve book with ID: 5
+2025-03-21T22:00:34.956+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-4] c.o.books.util.MetricsConfig             : Starting operation: getBookById
+2025-03-21T22:00:34.956+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-4] c.o.books.service.BookService            : Looking for book with ID: 5
+2025-03-21T22:00:34.963+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-4] c.o.books.util.MetricsConfig             : Operation 'getBookById' completed in 7 ms
+2025-03-21T22:00:34.963+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-4] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:01:24.279+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.controller.BookController      : Request to retrieve book with ID: 10
+2025-03-21T22:01:24.279+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : Starting operation: getBookById
+2025-03-21T22:01:24.279+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.service.BookService            : Looking for book with ID: 10
+2025-03-21T22:01:24.286+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : Operation 'getBookById' completed in 7 ms
+2025-03-21T22:01:24.286+05:30  INFO 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:01:24.287+05:30 ERROR 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.b.exception.BookNotFoundException    : BookNotFoundException: Book not found with id: 10
+2025-03-21T22:01:24.291+05:30 ERROR 4048 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.b.exception.BookNotFoundException    : Exception occurred: 
+
+com.onlinebookstore.books.exception.BookNotFoundException: Book not found with id: 10
+	at com.onlinebookstore.books.controller.BookController.lambda$0(BookController.java:44) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.onlinebookstore.books.controller.BookController.getBookById(BookController.java:44) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+

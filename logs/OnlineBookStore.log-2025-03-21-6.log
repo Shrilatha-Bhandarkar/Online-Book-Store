@@ -1,0 +1,36 @@
+2025-03-21T22:15:08.120+05:30 ERROR 29428 --- [OnlineBookStore] [http-nio-8081-exec-9] c.o.b.exception.GlobalExceptionHandler   : BookNotFoundException occurred: Book not found with ID: 20
+2025-03-21T22:15:57.393+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-10] c.o.books.controller.BookController      : Request to update book with ID: 13
+2025-03-21T22:15:57.393+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-10] c.o.books.util.MetricsConfig             : Starting operation: updateBook
+2025-03-21T22:15:57.394+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-10] c.o.books.service.BookService            : Updating book with ID: 13
+2025-03-21T22:15:57.405+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-10] c.o.books.util.MetricsConfig             : Operation 'updateBook' completed in 12 ms
+2025-03-21T22:15:57.407+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-10] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:15:57.408+05:30 ERROR 29428 --- [OnlineBookStore] [http-nio-8081-exec-10] c.o.b.exception.GlobalExceptionHandler   : BookNotFoundException occurred: Book not found with id: 13
+2025-03-21T22:16:08.629+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.controller.BookController      : Request to retrieve all books
+2025-03-21T22:16:08.629+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.util.MetricsConfig             : Starting operation: getAllBooks
+2025-03-21T22:16:08.630+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.service.BookService            : Retrieving all books
+2025-03-21T22:16:08.658+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.service.BookService            : Fetched 8 books
+2025-03-21T22:16:08.659+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.util.MetricsConfig             : Operation 'getAllBooks' completed in 30 ms
+2025-03-21T22:16:08.659+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:16:24.417+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.controller.BookController      : Request to retrieve all books
+2025-03-21T22:16:24.417+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Starting operation: getAllBooks
+2025-03-21T22:16:24.418+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.service.BookService            : Retrieving all books
+2025-03-21T22:16:24.427+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.service.BookService            : Fetched 8 books
+2025-03-21T22:16:24.427+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Operation 'getAllBooks' completed in 10 ms
+2025-03-21T22:16:24.427+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:17:51.504+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.controller.BookController      : Request to add a new book: Jane Eyre
+2025-03-21T22:17:51.504+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : Starting operation: addBook
+2025-03-21T22:17:51.505+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.service.BookService            : Saving book: Jane Eyre
+2025-03-21T22:17:51.514+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : Operation 'addBook' completed in 10 ms
+2025-03-21T22:17:51.515+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-5] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:17:54.427+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-6] c.o.books.controller.BookController      : Request to retrieve all books
+2025-03-21T22:17:54.429+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-6] c.o.books.util.MetricsConfig             : Starting operation: getAllBooks
+2025-03-21T22:17:54.429+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-6] c.o.books.service.BookService            : Retrieving all books
+2025-03-21T22:17:54.439+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-6] c.o.books.service.BookService            : Fetched 9 books
+2025-03-21T22:17:54.440+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-6] c.o.books.util.MetricsConfig             : Operation 'getAllBooks' completed in 11 ms
+2025-03-21T22:17:54.440+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-6] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:18:30.749+05:30  INFO 29428 --- [OnlineBookStore] [http-nio-8081-exec-7] c.o.books.controller.BookController      : Request to update book with ID: 11

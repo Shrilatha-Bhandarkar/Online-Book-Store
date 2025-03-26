@@ -1,0 +1,40 @@
+2025-03-21T21:59:25.886+05:30  INFO 27548 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Starting OnlineBookStoreApplication using Java 23.0.2 with PID 27548 (C:\Users\91938\eclipse-workspace\OnlineBookStore2\target\classes started by 91938 in C:\Users\91938\eclipse-workspace\OnlineBookStore2)
+2025-03-21T21:59:25.890+05:30 DEBUG 27548 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-21T21:59:25.892+05:30  INFO 27548 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-21T21:59:26.805+05:30  INFO 27548 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-21T21:59:26.893+05:30  INFO 27548 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2025-03-21T21:59:27.616+05:30  INFO 27548 --- [OnlineBookStore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-21T21:59:27.639+05:30  INFO 27548 --- [OnlineBookStore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-21T21:59:27.639+05:30  INFO 27548 --- [OnlineBookStore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21T21:59:27.744+05:30  INFO 27548 --- [OnlineBookStore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-21T21:59:27.744+05:30  INFO 27548 --- [OnlineBookStore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1762 ms
+2025-03-21T21:59:27.959+05:30  INFO 27548 --- [OnlineBookStore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-21T21:59:28.036+05:30  INFO 27548 --- [OnlineBookStore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-21T21:59:28.090+05:30  INFO 27548 --- [OnlineBookStore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-21T21:59:28.488+05:30  INFO 27548 --- [OnlineBookStore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-21T21:59:28.536+05:30  INFO 27548 --- [OnlineBookStore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-21T21:59:29.028+05:30  INFO 27548 --- [OnlineBookStore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7740b0ab
+2025-03-21T21:59:29.032+05:30  INFO 27548 --- [OnlineBookStore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-21T21:59:29.144+05:30  INFO 27548 --- [OnlineBookStore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-21T21:59:30.121+05:30  INFO 27548 --- [OnlineBookStore] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-21T21:59:30.192+05:30  INFO 27548 --- [OnlineBookStore] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-21T21:59:30.542+05:30  WARN 27548 --- [OnlineBookStore] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-21T21:59:31.010+05:30  INFO 27548 --- [OnlineBookStore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-03-21T21:59:31.022+05:30  INFO 27548 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Started OnlineBookStoreApplication in 5.848 seconds (process running for 6.51)
+2025-03-21T21:59:38.436+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21T21:59:38.437+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-21T21:59:38.439+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-21T21:59:38.490+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.controller.BookController      : Request to retrieve all books
+2025-03-21T21:59:38.492+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Starting operation: getAllBooks
+2025-03-21T21:59:38.492+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.service.BookService            : Retrieving all books
+2025-03-21T21:59:38.768+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.service.BookService            : Fetched 8 books
+2025-03-21T21:59:38.769+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : Operation 'getAllBooks' completed in 277 ms
+2025-03-21T21:59:38.769+05:30  INFO 27548 --- [OnlineBookStore] [http-nio-8081-exec-2] c.o.books.util.MetricsConfig             : ***********************************************************
+

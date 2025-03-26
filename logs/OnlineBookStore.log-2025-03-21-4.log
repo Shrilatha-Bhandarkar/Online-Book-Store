@@ -1,0 +1,38 @@
+2025-03-21T22:05:19.921+05:30  INFO 13668 --- [OnlineBookStore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-03-21T22:05:19.941+05:30  INFO 13668 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Started OnlineBookStoreApplication in 6.274 seconds (process running for 6.854)
+2025-03-21T22:05:24.343+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21T22:05:24.343+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-21T22:05:24.351+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-21T22:05:24.422+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.controller.BookController      : Request to retrieve book with ID: 10
+2025-03-21T22:05:24.423+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.util.MetricsConfig             : Starting operation: getBookById
+2025-03-21T22:05:24.423+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.service.BookService            : Looking for book with ID: 10
+2025-03-21T22:05:24.513+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.util.MetricsConfig             : Operation 'getBookById' completed in 90 ms
+2025-03-21T22:05:24.513+05:30  INFO 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.books.util.MetricsConfig             : ***********************************************************
+
+2025-03-21T22:05:24.514+05:30 ERROR 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.b.exception.BookNotFoundException    : BookNotFoundException: Book not found with id: 10
+2025-03-21T22:05:24.518+05:30 ERROR 13668 --- [OnlineBookStore] [http-nio-8081-exec-1] c.o.b.exception.GlobalExceptionHandler   : BookNotFoundException occurred: Book not found with id: 10
+2025-03-21T22:08:17.674+05:30  INFO 29428 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Starting OnlineBookStoreApplication using Java 23.0.2 with PID 29428 (C:\Users\91938\eclipse-workspace\OnlineBookStore2\target\classes started by 91938 in C:\Users\91938\eclipse-workspace\OnlineBookStore2)
+2025-03-21T22:08:17.678+05:30 DEBUG 29428 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-21T22:08:17.679+05:30  INFO 29428 --- [OnlineBookStore] [main] c.o.books.OnlineBookStoreApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-21T22:08:18.668+05:30  INFO 29428 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-21T22:08:18.760+05:30  INFO 29428 --- [OnlineBookStore] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2025-03-21T22:08:19.479+05:30  INFO 29428 --- [OnlineBookStore] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-21T22:08:19.499+05:30  INFO 29428 --- [OnlineBookStore] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-21T22:08:19.499+05:30  INFO 29428 --- [OnlineBookStore] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21T22:08:19.603+05:30  INFO 29428 --- [OnlineBookStore] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-21T22:08:19.603+05:30  INFO 29428 --- [OnlineBookStore] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1821 ms
+2025-03-21T22:08:19.835+05:30  INFO 29428 --- [OnlineBookStore] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-21T22:08:19.912+05:30  INFO 29428 --- [OnlineBookStore] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-21T22:08:19.966+05:30  INFO 29428 --- [OnlineBookStore] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-21T22:08:20.379+05:30  INFO 29428 --- [OnlineBookStore] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-21T22:08:20.420+05:30  INFO 29428 --- [OnlineBookStore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-21T22:08:20.911+05:30  INFO 29428 --- [OnlineBookStore] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1716c037
+2025-03-21T22:08:20.915+05:30  INFO 29428 --- [OnlineBookStore] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-21T22:08:21.038+05:30  INFO 29428 --- [OnlineBookStore] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
